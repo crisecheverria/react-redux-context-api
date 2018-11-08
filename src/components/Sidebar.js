@@ -10,9 +10,9 @@ const sidebar = {
   padding: 20
 }
 
-const Sidebar = ({user}) => (
+const Sidebar = () => (
   <div style={sidebar}>
-    <UserStats user={user} />
+    <UserStats />
   </div>
 )
 

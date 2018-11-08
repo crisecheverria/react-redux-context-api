@@ -3,6 +3,8 @@ import './App.css';
 import Nav from './components/Nav';
 import Body from './components/Body';
 
+export const UserContext = React.createContext();
+
 class App extends Component {
   state = {
     user: {
@@ -14,11 +16,12 @@ class App extends Component {
     }
   }
   render() {
-    const {user} = this.state;
     return (
       <div className="container">
-        <Nav user={user} />
-        <Body user={user} />
+        <UserContext.Provider value={this.state.user}>
+          <Nav />
+          <Body />
+        </UserContext.Provider>
       </div>
     );
   }

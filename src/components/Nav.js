@@ -2,7 +2,7 @@ import React from 'react';
 import { Nav, Navbar } from 'react-bootstrap';
 import UserAvatar from './UserAvatar';
 
-const NavBar = ({user}) => (
+const NavBar = () => (
   <Navbar>
     <Navbar.Header>
       <Navbar.Brand>
@@ -10,7 +10,7 @@ const NavBar = ({user}) => (
       </Navbar.Brand>
     </Navbar.Header>
     <Nav pullRight>
-      <UserAvatar user={user} size="small" />
+      <UserAvatar size="small" />
     </Nav>
   </Navbar>
 )
