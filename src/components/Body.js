@@ -4,8 +4,8 @@ import Content from './Content';
 
 const Body = ({ user }) => (
   <div className="body">
-    <Sidebar user={user} />
-    <Content user={user} />
+    <Sidebar />
+    <Content />
   </div>
 );
 

@@ -12,7 +12,7 @@ const sidebar = {
 
 const Sidebar = ({user}) => (
   <div style={sidebar}>
-    <UserStats user={user} />
+    <UserStats />
   </div>
 )
 
